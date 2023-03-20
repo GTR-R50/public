@@ -25,11 +25,11 @@ docker-compose --version && echo "第8步完成!"
 
 sudo curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh && sudo chmod +x installer.sh 
 
-sudo expect ./nine.sh && echo "第9步完成!"
+sudo expect /root/new/sh/nine.sh && echo "第9步完成!"
 
 cd /root/new/.shardeum && echo "第10步完成!"
 
-sudo expect /root/new/eleven.sh && echo "第11步完成!" && echo "全部步骤结束，开始进行登陆并质押!"
+sudo expect /root/new/sh/eleven.sh && echo "第11步完成!" && echo "全部步骤结束，开始进行登陆并质押!"
 
 
 
