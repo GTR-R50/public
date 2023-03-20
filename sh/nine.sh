@@ -28,7 +28,7 @@ expect {
 }
 
 expect {
-"*shardeum" {send "/root/.shardeum\n"} 
+"*shardeum" {send "/root/new/.shardeum\n"} 
 }
 
 expect eof
