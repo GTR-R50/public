@@ -33,7 +33,7 @@ echo "第8步完成!"
 sudo curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh 
 sudo chmod +x installer.sh 
 
-sudo expect ./nine.sh 
+sudo expect /root/public/sh/nine.sh
 echo "第9步完成!"
 
 cd /home/ubuntu/.shardeum
