@@ -6,6 +6,7 @@ set timeout 3
 
 expect {
 "By running this installer, you agree to allow the Shardeum team to collect this data. (y/n)?*" {send "y\n"} 
+# shellcheck disable=SC1089
 }
 expect {
 "Do you want to run the web based Dashboard? (y/n)?*" {send "y\n"} 
@@ -27,7 +28,8 @@ expect {
 }
 
 expect {
-"*shardeum" {send "/home/ubuntu/.shardeum\n"} 
+#"*shardeum" {send "/home/ubuntu/.shardeum\n"}
+"*shardeum" {send "/root"}
 }
 
 expect eof
