@@ -29,7 +29,7 @@ expect {
 
 expect {
 #"*shardeum" {send "/home/ubuntu/.shardeum\n"}
-"*shardeum" {send "/root"}
+"*shardeum" {send "/root/.shardeum\n"}
 }
 
 expect eof

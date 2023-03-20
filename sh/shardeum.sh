@@ -36,7 +36,7 @@ sudo chmod +x installer.sh
 sudo expect /root/public/sh/nine.sh
 echo "第9步完成!"
 
-cd /home/ubuntu/.shardeum
+cd /root/.shardeum
 echo "第10步完成!"
 
 # sudo ./shell.sh
