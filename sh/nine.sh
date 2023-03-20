@@ -2,15 +2,15 @@
 
 spawn sudo ./installer.sh
 
-set timeout 3 
+set timeout -1
 
 expect {
-"By running this installer, you agree to allow the Shardeum team to collect this data. (y/n)?*" {send "y\n"} 
-# shellcheck disable=SC1089
+"*By running this installer, you agree to allow the Shardeum team to collect this data. (y/n)?*" {send "y\n"} 
 }
 expect {
-"Do you want to run the web based Dashboard? (y/n)?*" {send "y\n"} 
+"*Do you want to run the web based Dashboard? (y/n)?*" {send "y\n"} 
 }
+
 expect {
 "*password*" {send "123456\n"} 
 }
@@ -28,8 +28,7 @@ expect {
 }
 
 expect {
-#"*shardeum" {send "/home/ubuntu/.shardeum\n"}
-"*shardeum" {send "/root/.shardeum\n"}
+"*shardeum" {send "/root/.shardeum\n"} 
 }
 
 expect eof
