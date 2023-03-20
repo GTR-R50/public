@@ -40,12 +40,11 @@ cd /home/ubuntu/.shardeum
 echo "第10步完成!"
 
 # sudo ./shell.sh
-sudo expect /home/ubuntu/eleven.sh 
+sudo expect /root/public/sh/eleven.sh
 echo "第11步完成!"
 
-# sudo operator-cli gui start
-
-# echo "第12步完成!"
+ sudo operator-cli gui start
+ echo "第12步完成!"
 
 
 
